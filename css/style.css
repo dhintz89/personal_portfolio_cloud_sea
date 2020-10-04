@@ -209,6 +209,7 @@ a {
 
 .tm-intro-pad {
     padding: 40px 55px 50px; 
+    width: 100%;
 }
 
 .tm-intro-col-l {
@@ -703,6 +704,10 @@ address {
         margin-right: 0;
         margin-bottom: 50px;
     }
+
+    .tm-contact-col-r {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -711,6 +716,9 @@ address {
     }
     .tm-about-col {
         flex: 0 0 100%;
+    }
+    .tm-about-col-r {
+        margin-top: 50px;
     }
 }
 
@@ -772,6 +780,10 @@ address {
 }
 
 @media (max-width: 805px) {
+    body {
+        background-image: url('../img/beach-sailboat.jpg');
+    }
+    
     .tm-gallery-row {
         flex-direction: column-reverse;
     }
