@@ -14,6 +14,11 @@ dark (black/white) */
 
 html { overflow-x: hidden; }
 
+:root {
+    --accent-color: #309AFD;
+    --main-font-color: #848586;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
@@ -38,11 +43,13 @@ body {
 p, span, em, a, address { color: #848586; }
 h2, p {
     margin-top: 0;
+    color: #848586;
 }
 
 a:hover, a.active { color: #309AFD; }
 
 .tm-btn {
+    float: right;
     padding: 10px 40px;
     color: white;
     background-color: #3299CD;
@@ -82,7 +89,7 @@ div { box-sizing: border-box;}
 .tm-bg-gray { background-color: #F1F2F3; }
 blockquote { margin: 0 0 30px 10px; }
 img { max-width: 100%; }
-.tm-page-title { font-size: 30px; }
+.tm-page-title { font-size: 30px; text-decoration: underline solid #309AFD;}
 
 body, ul {
     margin: 0;
@@ -130,7 +137,7 @@ a {
 .tm-nav-item {
     list-style: none;
     margin: 22px; 
-    background-color: white;
+    background-color: #F1F2F3;
     opacity: 1;  
 }
 
@@ -477,6 +484,149 @@ figure.effect-chico:hover p {
     margin-right: 40px;
     max-width: 500px;
 }
+
+#about h3 {
+    font-style: italic;
+    color: #309AFD;
+    text-align: center;
+    margin: 0;
+}
+  
+#timeline {
+    position: relative;
+    margin: 20px 0 30px 0;
+    top: 45px;
+}
+
+#timeline p {
+    font-size: .85em;
+}
+  
+#timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #309AFD;
+    height: 100%;
+    width: 10px;
+    left: -34px;
+}
+  
+#timeline p {
+    margin: 35px 0 0 0;
+    text-align: justify;
+    position: relative;
+}
+  
+#timeline p::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -46px;
+    top: calc(50% - 15px);
+    background-color: #848586;
+    border: solid 2px black;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+  
+#timeline #goal {
+    margin: 50px 0 20px 0;
+}
+  
+#arrow {
+    display: block;
+    position: absolute;
+    left: -48.5px;
+    bottom: -20px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #309AFD;
+}
+
+.pop {
+    font-weight: bold;
+    font-style: italic;
+    color: #309AFD;
+    text-decoration: underline solid var(--accent-color);
+    font-size: 1.2em;
+}
+
+.resume {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.resume-link {
+    display: inline-block;
+    position: relative;
+}
+
+#currentSkills {
+    margin: 60px auto;
+    width: 100%;
+}
+  
+  #skillGraph {
+    position: relative;
+    border: 1px solid var(--accent-color);
+    padding-top: 75%;
+  }
+  
+  .skillGraphBubble {
+    /* animation: scale ~1.2 while moving up/down while changing colors */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: var(--main-font-color);
+    border: 1px solid black;
+    font-size: .8em;
+  }
+  
+  #JSSkill {
+    width: 33%;
+    height: 41%;
+    left: 32%;
+    top: 30%;
+  }
+  
+  #rubySkill {
+    width: 23%;
+    height: 29%;
+    left: 5%;
+    top: 5%;
+  }
+  
+  #htmlSkill {
+    width: 7%;
+    height: 9%;
+    left: 90%;
+    top: 10%;
+  }
+  
+  #cssSkill {
+    width: 18%;
+    height: 22%;
+    left: 75%;
+    top: 72%;
+  }
+  
+  #sqlSkill {
+    width: 12%;
+    height: 15%;
+    left: 10%;
+    top: 83%;
+  }
 
 /* Contact */
 #contact {
