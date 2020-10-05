@@ -112,27 +112,6 @@ a {
     margin-left: 130px;
 }
 
-#tm-video-container {
-    max-height: 400px;
-    overflow: hidden;
-    background-color: #333;
-    margin-bottom: 90px;
-    position: relative;
-}
-
-#tm-video {
-    width: 100%;
-    height: auto;
-}
-
-#tm-video-control-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    color: #e1e1e1;
-}
-
 .tm-nav-item {
     list-style: none;
     margin: 22px; 
@@ -453,6 +432,14 @@ figure.effect-chico:hover p {
 }
 
 /* Testimonials */
+.tm-blog-container {
+    position: relative;    
+    max-width: 800px;
+    margin: 0 -10px;
+	list-style: none;
+    text-align: center;
+}
+
 .tm-testimonials-inner {
     padding: 0 20px 30px;
 }
@@ -551,7 +538,6 @@ figure.effect-chico:hover p {
     font-weight: bold;
     font-style: italic;
     color: #309AFD;
-    text-decoration: underline solid var(--accent-color);
     font-size: 1.2em;
 }
 
@@ -571,7 +557,7 @@ figure.effect-chico:hover p {
 
 #currentSkills {
     margin: 60px auto;
-    width: 100%;
+    width: 90%;
 }
   
   #skillGraph {
