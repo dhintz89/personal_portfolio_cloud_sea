@@ -431,7 +431,7 @@ figure.effect-chico:hover p {
 	transform: scale(1);
 }
 
-/* Testimonials */
+/* Blog */
 .tm-blog-container {
     position: relative;    
     max-width: 800px;
@@ -440,6 +440,12 @@ figure.effect-chico:hover p {
     text-align: center;
 }
 
+.blogCard {
+    outline: 2px solid black;
+    list-style-type: none;
+}
+
+/* Testimonials */
 .tm-testimonials-inner {
     padding: 0 20px 30px;
 }
@@ -464,12 +470,16 @@ figure.effect-chico:hover p {
     width:100%;
 }
 .tm-contact-row {
-    max-width: 1045px;
+    /* max-width: 1045px; */
 }
 .tm-about-col {
     margin-left: 40px;
     margin-right: 40px;
     max-width: 500px;
+}
+
+.tm-about-col-r {
+    margin-top: 90px;
 }
 
 #about h3 {
@@ -487,6 +497,13 @@ figure.effect-chico:hover p {
 
 #timeline p {
     font-size: .85em;
+    margin: 35px 0 0 0;
+    text-align: justify;
+    position: relative;
+}
+
+ #timeline #BA {
+    margin: 0;
 }
   
 #timeline::before {
@@ -497,12 +514,6 @@ figure.effect-chico:hover p {
     height: 100%;
     width: 10px;
     left: -34px;
-}
-  
-#timeline p {
-    margin: 35px 0 0 0;
-    text-align: justify;
-    position: relative;
 }
   
 #timeline p::before {
@@ -619,17 +630,18 @@ figure.effect-chico:hover p {
     padding-bottom: 65px;
 }
 .tm-contact-col {
-    flex: 0 0 50%;
+    /* flex: 0 0 50%; */
     padding-left: 40px;  
+    width: 50%;
 }
 
 .tm-contact-col-r {
-    padding-left: 0;
-    padding-right: 30px;
+    padding-right: 40px;
+    margin: 0 40px;
 }
 
 .tm-contact-form {
-    max-width: 350px;
+    max-width: 450px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -670,6 +682,8 @@ select:not([multiple]) {
 
 address {
     font-style: normal;
+    text-align: center;
+    font-size: 1.3em;
 }
 
 @media (max-width: 850px) {

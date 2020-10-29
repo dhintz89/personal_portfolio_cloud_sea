@@ -3,16 +3,17 @@
 // I must use imagesLoaded jquery plugin as it's already included in js folder. reference: https://imagesloaded.desandro.com/
 
 // call api data
-    $.get("https://dev.to/api/articles?username=dhintz89")
-      .done(function(data) {
-        alert( "load successful" );
-        loadBlogCard(data[0])
-      })
-      .fail(function(data) {
-        alert( "error" );
-      });
+$.get("https://dev.to/api/articles?username=dhintz89")
+  .done(data => {
+    loadBlogCard(data);
+  })
+  .fail(function(data) {
+    alert( "error" );
+  });
 
-function loadBlogCard(blogData) {
+function loadBlogCard(blogsArray) {
+  blogsArray.forEach(blogData => {
+    // save relevant data as vars
     const coverimg = blogData.cover_image; // url
     const title = blogData.title;
     const summary = blogData.description;
@@ -20,7 +21,25 @@ function loadBlogCard(blogData) {
     const likes = blogData.positive_reactions_count;
     const url = blogData.canonical_url;
     const tags = blogData.tag_list;
-    console.log(title + ": " + content);
+    console.log(title + ": " + summary);
+
+    // create html elements
+    const card = document.createElement("li");
+    card.classList.add('blogCard');
+    card.innerHTML = `
+      <img src=${coverimg} />
+      <span class="title"><h3>${title}</h3></span>
+      <p class="summary">${summary}</p>
+      <span class="likes">Likes: ${likes}</span>
+      <span class="tags">${tags}</span>
+    `
+
+    // add to DOM
+    document.querySelector(".tm-blog-container .slides").appendChild(card);
+  })
+}
+
+
     // create html element for container
     // create elements for each piece of content
 
@@ -35,4 +54,3 @@ function loadBlogCard(blogData) {
     // -lks--LINK->-
     // -pub--LINK->-
     // --tag1-tag2--
-}
