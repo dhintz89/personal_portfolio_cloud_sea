@@ -6,7 +6,8 @@
     <title>Daniel Hintz Designs</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css"> 
     <link rel="stylesheet" href="css/popup.css"> 
 </head>
 <body>
@@ -64,11 +65,23 @@
                 </a>
                 <div class="tm-row tm-gallery-row">
                     <!-- Active Content Pane -->
-                    <div class="tm-gallery">
-                        <div class="tm-blog-container flexslider">
-                            <ul class="slides">
-                                <!-- Loaded Blogs will render here -->
-                            </ul>
+                    <div class="carousel-container">
+                        <div class="blog-carousel">
+                            <!-- Loaded Blogs will render here -->
+                            <span class="next-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                  </svg>
+                            </span>
+                            <span class="prev-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <polyline points="11 7 6 12 11 17" />
+                                    <polyline points="17 7 12 12 17 17" />
+                                  </svg>
+                            </span>
                         </div>
                     </div>
                     <!-- Gallery navigation -->

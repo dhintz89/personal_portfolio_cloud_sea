@@ -1,0 +1,92 @@
+.carousel-container {
+  flex: 0 0 75%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* previous, active, and next slide formatting */
+.carousel-container .prev {
+  z-index: 800;
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+
+.carousel-container .active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel-container .next {
+  z-index: 800;
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.blog-carousel {
+  position: relative;    
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.projects-carousel {
+  position: relative;    
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.blogCard {
+  background-color: white;
+  /* outline: 2px solid black; */
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+
+
+.title h3 {
+  margin-block-start: 0;
+}
+
+.summary {
+  font-size: .9em;
+}
+
+.likes {
+  position: relative;
+  right: 25%;
+}
+
+.likes svg {
+  padding-right: 4px;
+  overflow: visible;
+}
+
+.tags {
+  position: relative;
+  left: 25%;
+  font-size: .7em;
+}
+
+.next-arrow, .prev-arrow {
+  position: absolute;
+  top:50%;
+  width: 60px;
+  height: 5rem;
+  cursor: pointer; 
+  z-index: 1001;
+  line-height: 6.5em;
+  color: #F1F2F3;
+}
+
+.next-arrow {
+  right: 0;
+}
+
+.prev-arrow {
+  left: 0;
+}

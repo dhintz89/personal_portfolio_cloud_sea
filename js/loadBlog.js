@@ -24,19 +24,25 @@ function loadBlogCard(blogsArray) {
     console.log(title + ": " + summary);
 
     // create html elements
-    const card = document.createElement("li");
+    const card = document.createElement("div");
     card.classList.add('blogCard');
     card.innerHTML = `
       <img src=${coverimg} />
       <span class="title"><h3>${title}</h3></span>
       <p class="summary">${summary}</p>
-      <span class="likes">Likes: ${likes}</span>
-      <span class="tags">${tags}</span>
+      <span class="likes">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="18" height="18" viewBox="0 0 20 20" stroke-width="1.5" stroke="#E91E63" fill="#E91E63" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg> ${likes}
+      </span>
+      <span class="tags">Tags: ${tags}</span>
     `
 
     // add to DOM
-    document.querySelector(".tm-blog-container .slides").appendChild(card);
-  })
+    document.querySelector(".blog-carousel").appendChild(card);
+  });
+  document.querySelector(".blogCard").classList.add("active");
 }
 
 

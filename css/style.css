@@ -245,16 +245,15 @@ button.mfp-arrow {
 
 /* Gallery */
 .tm-gallery {
-    flex: 0 0 68%;
-    margin: 0 20px;
+    flex: 0 0 75%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .tm-gallery-container {
     position: relative;    
-    max-width: 800px;
-    margin: 0 -10px;
-	list-style: none;
     text-align: center;
+    transform-style: preserve-3d;
 }
 
 .tm-paging {
@@ -432,18 +431,7 @@ figure.effect-chico:hover p {
 }
 
 /* Blog */
-.tm-blog-container {
-    position: relative;    
-    max-width: 800px;
-    margin: 0 -10px;
-	list-style: none;
-    text-align: center;
-}
-
-.blogCard {
-    outline: 2px solid black;
-    list-style-type: none;
-}
+/* See carousel.css */
 
 /* Testimonials */
 .tm-testimonials-inner {
