@@ -179,7 +179,7 @@ $(document).ready(function () {
 
     //event handlers
     $('.tm-gallery-link').click(function(e) {        
-        var filter = $(this).data('filter');        
+        var filter = $(this).data('filter');       
         currentFilter = filter;
         setPagination();
         goToPage(1);
