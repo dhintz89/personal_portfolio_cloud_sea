@@ -86,6 +86,9 @@
   color: #F1F2F3;
 }
 
+.next-arrow svg:hover, .prev-arrow:hover * {
+  color: #309AFD;
+}
 
 .next-arrow {
   right: 0;
