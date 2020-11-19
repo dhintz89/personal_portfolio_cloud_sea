@@ -27,6 +27,7 @@ function loadBlogCards(blogsArray) {
     link.href = url;
     const card = document.createElement("div");
     card.classList.add('blogCard');
+    card.classList.add('slide');
     card.innerHTML = `
         <img src=${coverimg} />
         <span class="title"><h3>${title}</h3></span>
@@ -48,7 +49,7 @@ function loadBlogCards(blogsArray) {
 
     // add to DOM
     link.appendChild(card);
-    document.querySelector(".blog-carousel").appendChild(link);
+    document.querySelector(".blog").appendChild(link);
   });
   document.querySelector(".blogCard").classList.add("active");
 }

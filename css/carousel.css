@@ -21,21 +21,13 @@
   transform: translateX(100%); /* Move 'next' item to the right */
 }
 
-.blog-carousel {
+.carousel {
   position: relative;    
   text-align: center;
   transform-style: preserve-3d;
 }
 
-.projects-carousel {
-  position: relative;    
-  text-align: center;
-  transform-style: preserve-3d;
-}
-
-.blogCard {
-  background-color: white;
-  /* outline: 2px solid black; */
+.slide {
   opacity: 0;
   position: absolute;
   top:0;
@@ -46,35 +38,6 @@
   transition: transform .5s, opacity .5s, z-index .5s;
 }
 
-.title h3 {
-  margin-block-start: 0;
-}
-
-.summary {
-  font-size: .9em;
-}
-
-.likes {
-  position: relative;
-  right: 25%;
-}
-
-.likes svg {
-  padding-right: 4px;
-  overflow: visible;
-}
-
-.tags {
-  position: relative;
-  left: 25%;
-  font-size: .7em;
-}
-
-.tags svg {
-  padding-right: 4px;
-  overflow: visible;
-}
-
 .next-arrow, .prev-arrow {
   position: absolute;
   top: 43%;
@@ -83,7 +46,6 @@
   cursor: pointer; 
   z-index: 1001;
   line-height: 6.5em;
-  color: #F1F2F3;
 }
 
 .next-arrow svg:hover, .prev-arrow:hover * {

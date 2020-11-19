@@ -451,7 +451,38 @@ figure.effect-chico:hover p {
 }
 
 /* Blog */
-/* See carousel.css */
+.blogCard {
+    background-color: white;  /* rest of formatting comes from carousel.css (.slide) */
+}
+  
+.title h3 {
+  margin-block-start: 0;
+}
+
+.summary {
+  font-size: .9em;
+}
+
+.likes {
+  position: relative;
+  right: 25%;
+}
+
+.likes svg {
+  padding-right: 4px;
+  overflow: visible;
+}
+
+.tags {
+  position: relative;
+  left: 25%;
+  font-size: .7em;
+}
+
+.tags svg {
+  padding-right: 4px;
+  overflow: visible;
+}
 
 /* Testimonials */
 .tm-testimonials-inner {

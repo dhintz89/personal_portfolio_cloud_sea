@@ -88,12 +88,12 @@ function setUpCarousel(classToApplyCarousel) {
         // by add/remove classes to trigger the transitions.
         // Reset old next/prev elements to default classes
             // need to account for multiple classnames
-        cards[oldPrevious].className = classToApplyCarousel;
-        cards[oldNext].className = classToApplyCarousel;
+        cards[oldPrevious].className = classToApplyCarousel + " slide";
+        cards[oldNext].className = classToApplyCarousel + " slide";
         // Add new classes
-        cards[newPrevious].className = classToApplyCarousel + " prev";
-        cards[slide].className = classToApplyCarousel + " active";
-        cards[newNext].className = classToApplyCarousel + " next";
+        cards[newPrevious].className = classToApplyCarousel + " slide prev";
+        cards[slide].className = classToApplyCarousel + " slide active";
+        cards[newNext].className = classToApplyCarousel + " slide next";
       }
     }
   }
