@@ -12,14 +12,16 @@ function setUpCarousel(classToApplyCarousel) {
   }
 
   function setEventListeners() {
-    let next = document.getElementsByClassName('next-arrow')[0];
-    let prev = document.getElementsByClassName('prev-arrow')[0];
-    next.addEventListener('click', moveNext);
-    prev.addEventListener('click', movePrev);
+    let next = document.getElementsByClassName('next-arrow');
+    let prev = document.getElementsByClassName('prev-arrow');
+    // since there are multiple separate carousels on site, need to iterate through instances of next/prev arrows
+    for(let i=0; i<next.length; i++) {next[i].addEventListener('click', moveNext)}
+    for(let i=0; i<prev.length; i++) {prev[i].addEventListener('click', movePrev)}
   }
 
   // Change active slide to next
   function moveNext() {
+    console.log("next")
     // Prevent changing slides during transitioning (can only move 1 at a time)
     if (!moving) {
       // If it's the last slide, reset to 0, else +1
@@ -35,6 +37,7 @@ function setUpCarousel(classToApplyCarousel) {
 
   // Change active slide to prev
   function movePrev() {
+    console.log("previous")
     // Prevent changing slides during transitioning (can only move 1 at a time)
     if (!moving) {
       // If it's the first slide, set as the last slide, else -1
@@ -57,6 +60,7 @@ function setUpCarousel(classToApplyCarousel) {
   }
 
   function moveCarouselTo(slide) {
+    console.log("moving")
     // Check if carousel is moving, if not, allow interaction
     if(!moving) {
       // temporarily disable interactivity
@@ -67,7 +71,7 @@ function setUpCarousel(classToApplyCarousel) {
       let oldPrevious = slide - 2;
       let oldNext = slide + 2;
       // Test if carousel has more than three items
-      if ((cards.length - 1) > 3) {
+      if ((cards.length - 1) >= 3) {
         // Checks and updates if the new slides are out of bounds
         if (newPrevious <= 0) {
           oldPrevious = (cards.length - 1);
@@ -84,7 +88,6 @@ function setUpCarousel(classToApplyCarousel) {
           newNext = 0;
           oldNext = 1;
         }
-
         // by add/remove classes to trigger the transitions.
         // Reset old next/prev elements to default classes
             // need to account for multiple classnames

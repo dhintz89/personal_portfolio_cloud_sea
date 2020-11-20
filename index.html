@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="tm-nav-item">
-                        <a href="#projects" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                        <a href="#projects" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link" onclick="setUpCarousel('projectCard')">
                             Projects
                             <i class="far fa-3x fa-images"></i>
                         </a>
@@ -103,32 +103,91 @@
                     <i class="fas fa-times"></i>
                 </a>
 
-                <!-- Add projects as a carousel at top. Below include cool features interactively. -->
+                <!-- Add projects as a screenshot carousel at top. Below include cool features interactively. -->
                 <div class="tm-row tm-gallery-row">
-                    <div class="tm-gallery">
+                    <div class="carousel-container">
+                        <div class="projects carousel">
+                            <div class="projectCard slide">
+                                <figure class="effect-chico rails react">
+                                    <img src="img/visual_shop_screenshot.svg" alt="Visual Store"/>
+                                    <figcaption>
+                                        <p>Visual Store</p>
+                                    </figcaption>
+                                </figure>
+                                <p>Some other stuff.</p>
+                            </div>
+                            <div class="projectCard slide">
+                                <figure class="effect-chico rails javascript">
+                                    <img src="img/whats-cookin-screenshot.svg" alt="Whats Cookin"/>
+                                    <figcaption>
+                                        <p>What's Cookin'</p>
+                                    </figcaption>
+                                </figure>
+                                <p>Some other stuff.</p>
+                            </div>
+                            <div class="projectCard slide">
+                                <figure class="effect-chico other">
+                                    <img src="img/my-town-tracker-screenshot.svg" alt="My Town Tracker"/>
+                                    <figcaption>
+                                        <p>My Town Tracker</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="projectCard slide">
+                                <figure class="effect-chico rails">
+                                    <img src="img/stockstack_screenshot.svg" alt="Stock Stack"/>
+                                    <figcaption>
+                                        <p>Stock Stack</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <span class="next-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-right" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                  </svg>
+                            </span>
+                            <span class="prev-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevrons-left" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9E9E9E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <polyline points="11 7 6 12 11 17" />
+                                    <polyline points="17 7 12 12 17 17" />
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="tm-gallery">
                         <div class="tm-gallery-container">
                             <figure class="effect-chico tm-gallery-item rails react">
-                                <img src="img/gallery/portrait-01.jpg" alt="Visual_Store"/>
+                                <img src="img/visual_shop_screenshot.svg" alt="Visual Store"/>
                                 <figcaption>
                                     <p>Visual Store</p>
                                 </figcaption>
                             </figure>
-                            <figure class="effect-chico tm-gallery-item rails">
-                                <img src="img/Whats-Cookin-Site.png" alt="Whats_Cookin"/>
+                            <figure class="effect-chico tm-gallery-item rails javascript">
+                                <img src="img/whats-cookin-screenshot.svg" alt="Whats Cookin"/>
                                 <figcaption>
                                     <p>What's Cookin'</p>
                                 </figcaption>
                             </figure>
-                            <figure class="effect-chico tm-gallery-item animal">
-                                <img src="img/gallery/animal-01.jpg" alt="Image"/>
+                            <figure class="effect-chico tm-gallery-item other">
+                                <img src="img/my-town-tracker-screenshot.svg" alt="My Town Tracker"/>
                                 <figcaption>
-                                    <p>Chico's main fear was missing the morning bus.</p>
+                                    <p>My Town Tracker</p>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect-chico tm-gallery-item rails">
+                                <img src="img/stockstack_screenshot.svg" alt="Stock Stack"/>
+                                <figcaption>
+                                    <p>Stock Stack</p>
                                 </figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <!-- Gallery navigation and description -->
-                    <div class="tm-col tm-gallery-right">
+                    </div> -->
+
+                    <!-- Gallery navigation (filters) and description -->
+                    <!-- <div class="tm-col tm-gallery-right">
                         <h2 class="tm-color-primary tm-mt-35 tm-page-title">Projects</h2>
                         <div class="tm-gallery-right-inner">
                             <ul class="tm-gallery-links">
@@ -170,7 +229,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 

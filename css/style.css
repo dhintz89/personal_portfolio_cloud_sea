@@ -264,6 +264,10 @@ button.mfp-arrow {
     margin-right: 9px;
 }
 
+.projectCard {
+    background: white;
+}
+
 .tm-gallery {
     flex: 0 0 75%;
     margin: auto;
@@ -456,32 +460,32 @@ figure.effect-chico:hover p {
 }
   
 .title h3 {
-  margin-block-start: 0;
+    margin-block-start: 0;
 }
 
 .summary {
-  font-size: .9em;
+    font-size: .9em;
 }
 
 .likes {
-  position: relative;
-  right: 25%;
+    position: relative;
+    right: 25%;
 }
 
 .likes svg {
-  padding-right: 4px;
-  overflow: visible;
+    padding-right: 4px;
+    overflow: visible;
 }
 
 .tags {
-  position: relative;
-  left: 25%;
-  font-size: .7em;
+    position: relative;
+    left: 25%;
+    font-size: .7em;
 }
 
 .tags svg {
-  padding-right: 4px;
-  overflow: visible;
+    padding-right: 4px;
+    overflow: visible;
 }
 
 /* Testimonials */
