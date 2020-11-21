@@ -46,12 +46,12 @@
                             <i class="far fa-3x fa-smile"></i>
                         </a>
                     </li> -->
-                    <li class="tm-nav-item">
+                    <!-- <li class="tm-nav-item">
                         <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
                             Contact
                             <i class="far fa-3x fa-comments"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
 
@@ -108,37 +108,37 @@
                     <div class="carousel-container">
                         <div class="projects carousel">
                             <div class="projectCard slide">
-                                <figure class="effect-chico rails react">
-                                    <img src="img/visual_shop_screenshot.svg" alt="Visual Store"/>
+                                <figure class="rails react"> <!-- Add 'effect-chico' to class for label effect -->
                                     <figcaption>
                                         <p>Visual Store</p>
                                     </figcaption>
+                                    <img src="img/visual_shop_screenshot.svg" alt="Visual Store"/>
                                 </figure>
                                 <p>Some other stuff.</p>
                             </div>
                             <div class="projectCard slide">
-                                <figure class="effect-chico rails javascript">
-                                    <img src="img/whats-cookin-screenshot.svg" alt="Whats Cookin"/>
+                                <figure class="rails javascript">
                                     <figcaption>
                                         <p>What's Cookin'</p>
                                     </figcaption>
+                                    <img src="img/whats-cookin-screenshot.svg" alt="Whats Cookin"/>
                                 </figure>
                                 <p>Some other stuff.</p>
                             </div>
                             <div class="projectCard slide">
-                                <figure class="effect-chico other">
-                                    <img src="img/my-town-tracker-screenshot.svg" alt="My Town Tracker"/>
+                                <figure class="other">
                                     <figcaption>
                                         <p>My Town Tracker</p>
                                     </figcaption>
+                                    <img src="img/my-town-tracker-screenshot.svg" alt="My Town Tracker"/>
                                 </figure>
                             </div>
                             <div class="projectCard slide">
-                                <figure class="effect-chico rails">
-                                    <img src="img/stockstack_screenshot.svg" alt="Stock Stack"/>
+                                <figure class="rails">
                                     <figcaption>
                                         <p>Stock Stack</p>
                                     </figcaption>
+                                    <img src="img/stockstack_screenshot.svg" alt="Stock Stack"/>
                                 </figure>
                             </div>
                             <span class="next-arrow">
@@ -365,100 +365,35 @@
                     </div>               
                 </div>
             </div>
-
-            <div id="contact" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-                <a href="#" class="tm-close-popup">
-                    Return Home
-                    <i class="fas fa-times"></i>
-                </a>
-                <h2 class="tm-contact-col tm-color-primary tm-page-title tm-mb-40">Contact Me</h2>
-                <div class="tm-row tm-contact-row">
-                    <div class="tm-col tm-contact-col">
-                    
-                    <!-- Do you need a working HTML contact form?
-                        Please visit https://templatemo.com/contact page -->
-                        
-                        <form id="contact-form" action="" method="POST" class="tm-contact-form">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control rounded-0" placeholder="Full Name" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
-                            </div>
-                            <!-- <div class="form-group">
-                                <select class="form-control" id="contact-select" name="inquiry">
-                                    <option value="-">Subject</option>
-                                    <option value="sales">Sales &amp; Marketing</option>
-                                    <option value="creative">Creative Design</option>
-                                    <option value="uiux">UI / UX</option>
-                                </select>
-                            </div> -->
-                            <div class="form-group">
-                                <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
-                            </div>
-
-                            <div class="form-group tm-text-right">
-                                <button type="submit" class="tm-btn tm-btn-primary">Send it now</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="tm-col tm-contact-col tm-contact-col-r">
-                        <!-- Address -->
-                        <address class="tm-mb-15">
-                            I live in beautiful Charleston, South Carolina. <br/> Just a short drive to the beach.
-                        </address>
-                        
-                        <!-- Map -->
-                        <div class="mapouter tm-mb-40">
-                            <div class="gmap_canvas">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d95606.31464147233!2d-79.96935818465934!3d32.803475790303764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1603943104679!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div>
-
-                        <ul class="tm-contact-links">
-                            <li>
-                                <a href="tel:8153265378">
-                                    <i class="fas fa-phone tm-contact-link-icon"></i>
-                                    815-326-5378
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:dhintz89@gmail.com">
-                                    <i class="fas fa-at tm-contact-link-icon"></i>
-                                    dhintz89@gmail.com
-                                </a>
-                            </li>
-                            <li>
-                                <div id="brandBar">
-                                    <i class="fas fa-link tm-contact-link-icon"></i>
-                                    <span id="twitterIcon">
-                                        <a href="https://twitter.com/dhintz89"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="#F5F8FA" fill="#1DA1F2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
-                                        </svg></a>
-                                    </span>
-                                    <span id="linkedInIcon">
-                                        <a href="https://www.linkedin.com/in/dan-hintz/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke="#F5F8FA" fill="#0072b1"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                                    </span>
-                                    <span id="devIcon">
-                                        <a href="https://dev.to/dhintz89"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Daniel Hintz's DEV Profile" height="30" width="30"/></a>
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- <li>
-                                <a href="https://www.company.com">
-                                    <i class="fas fa-link tm-contact-link-icon"></i>
-                                    URL: www.company.com
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <!-- Add back Contact Page Here (separate file)-->
         </div>
         <footer class="tm-footer">
             <span class="logo"><img src='./img/DanHintzDesignLogo - DHSmileOutlined.svg' class="DHLogo" alt="Dan Hintz Design Logo" width="30" /></span>
             <span>Copyright &copy; 2020 Daniel Hintz Designs</span>
+            <div id="brandBar">
+                <i class="fas fa-link tm-contact-link-icon"></i>
+                <span id="emailIcon">
+                    <a href="mailto:dhintz89@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="#fff" fill="#309AFD" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                          </svg>
+                    </a>
+                </span>
+                <span id="twitterIcon">
+                    <a href="https://twitter.com/dhintz89"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="#F5F8FA" fill="#1DA1F2" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
+                    </svg></a>
+                </span>
+                <span id="linkedInIcon">
+                    <a href="https://www.linkedin.com/in/dan-hintz/"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke="#F5F8FA" fill="#0072b1"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </span>
+                <span id="devIcon">
+                    <a href="https://dev.to/dhintz89"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Daniel Hintz's DEV Profile" height="30" width="30"/></a>
+                </span>
+            </div>
         </footer>
     </div>
 

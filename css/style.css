@@ -268,6 +268,11 @@ button.mfp-arrow {
     background: white;
 }
 
+figcaption p {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
 .tm-gallery {
     flex: 0 0 75%;
     margin: auto;
@@ -414,6 +419,8 @@ figure.effect-chico figcaption {
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    bottom: 150px;
+    position: relative;
 }
 
 figure.effect-chico figcaption::before {
@@ -422,7 +429,7 @@ figure.effect-chico figcaption::before {
 	right: 15px;
 	bottom: 15px;
 	left: 15px;
-	border: 1px solid #fff;
+    border: 1px solid #fff;
 	content: '';
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -719,14 +726,28 @@ select:not([multiple]) {
 }
 
 .tm-contact-link-icon {
-    margin-right: 15px;
     color: #848586;
+
+    /* For Contact Page Only */
+    /* margin-right: 15px; */
+    
+    /* For Footer Only */
+    position: absolute; 
+    left: -25px;
+    top: 8px;
+
 }
 
 address {
     font-style: normal;
     text-align: center;
     font-size: 1.3em;
+}
+
+#brandBar {
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
 }
 
 @media (max-width: 850px) {
@@ -905,6 +926,12 @@ address {
         margin-left: 25%;
         bottom: 60px;
         font-size: 1em;
+    }
+
+    #brandBar {
+        position: absolute;
+        left: 35%;
+        bottom: 38px;
     }
 }
 
