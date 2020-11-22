@@ -39,10 +39,10 @@ body {
     margin: auto;
 }
 
-p, span, em, a, address { color: #848586; }
+p, span, em, a, address { color: var(--main-font-color); }
 h2, p {
     margin-top: 0;
-    color: #848586;
+    color: var(--main-font-color);
 }
 
 a:hover, a.active { color: #309AFD; }
@@ -266,11 +266,21 @@ button.mfp-arrow {
 
 .projectCard {
     background: white;
+    color: var(--main-font-color)
+}
+
+.projectCard figure {
+    padding-bottom: 1px;
+}
+
+.projectCard p {
+    text-align: left;
+    line-height: 1em;
 }
 
 figcaption p {
-    font-size: 1.17em;
-    font-weight: bold;
+    font-size: .8em;
+    font-style: italic;
 }
 
 .tm-gallery {
@@ -1040,7 +1050,15 @@ address {
     
     .tm-tagline {
         bottom: 100px;
-        font-size: .9em;   
+        font-size: .7em;   
         margin-left: 100px;
+    }
+
+    #brandBar {
+        bottom: 2em;
+    }
+
+    body > div > footer > span:nth-child(2) {
+        font-size: 0.8em;
     }
 }
