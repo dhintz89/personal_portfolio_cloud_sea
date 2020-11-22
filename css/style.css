@@ -621,59 +621,128 @@ figure.effect-chico:hover p {
     width: 90%;
 }
   
-  #skillGraph {
+#skillGraph {
     position: relative;
     border: 1px solid var(--accent-color);
     padding-top: 75%;
-  }
+}
   
-  .skillGraphBubble {
+.skillGraphBubble {
     /* animation: scale ~1.2 while moving up/down while changing colors */
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--accent-color);
-    color: var(--main-font-color);
     border: 1px solid black;
     font-size: .8em;
-  }
+    animation: animate 3s ease-in-out infinite; 
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+
+@keyframes animate { 
+    0% { 
+        transform: scale(1);
+    } 
+
+    25% {
+        transform: scale(.95);
+    }
+
+    50% { 
+        transform: scale(1);
+    } 
+
+    75% {
+        transform: scale(1.05);
+    }
+
+    100% { 
+        transform: scale(1);
+    } 
+} 
   
-  #JSSkill {
+#JSSkill {
     width: 33%;
     height: 41%;
-    left: 32%;
-    top: 30%;
-  }
-  
-  #rubySkill {
-    width: 23%;
-    height: 29%;
-    left: 5%;
+    left: 20%;
+    top: 45%;
+    background-color: #f7df1e;
+    color: #000;
+    animation-delay: 0.3s; 
+    animation-direction: reverse; 
+}
+
+#reactSkill {
+    width: 25%;
+    height: 30%;
+    left: 35%;
     top: 5%;
-  }
+    background-color: #61DBFB;
+    color: #000;
+    animation-delay: 0.7s; 
+}
   
-  #htmlSkill {
-    width: 7%;
-    height: 9%;
-    left: 90%;
+#rubySkill {
+    width: 19%;
+    height: 23%;
+    left: 5%;
+    top: 14%;
+    background-color: #d51f06;
+    color: #fff;
+    animation-delay: 0.3s; 
+    animation-direction: reverse; 
+    animation-duration: 2.3s; 
+}
+
+#railsSkill {
+    width: 33%;
+    height: 41%;
+    left: 58%;
+    top: 30%;
+    background-color: #8f0606;
+    color: #fff;
+    animation-delay: 0.3s; 
+    animation-duration: 2.3s; 
+}
+  
+#htmlSkill {
+    width: 12%;
+    height: 15%;
+    left: 80%;
     top: 10%;
-  }
+    font-size: 60%;
+    background-color: #00b527;
+    color: #fff;
+    animation-delay: 0.7s; 
+    animation-direction: reverse; 
+    animation-duration: 1.8s
+}
   
-  #cssSkill {
+#cssSkill {
     width: 18%;
     height: 22%;
     left: 75%;
     top: 72%;
-  }
+    color: #000;
+    background-color: #309AFD;
+    color: #000;
+    animation-delay: 0.5s; 
+    animation-direction: reverse; 
+    animation-duration: 2.3s; 
+}
   
-  #sqlSkill {
+#sqlSkill {
     width: 12%;
     height: 15%;
     left: 10%;
-    top: 83%;
-  }
+    top: 80%;
+    background-color: #31648d;
+    color: #fff;
+    animation-delay: 0.3s; 
+    animation-duration: 1.3s; 
+}
 
 /* Contact */
 #contact {
@@ -771,6 +840,10 @@ address {
 
     .tm-contact-col-r {
         margin-top: 50px;
+    }
+
+    #htmlSkill {
+        font-size: 50%;
     }
 }
 
