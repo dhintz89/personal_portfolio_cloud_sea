@@ -539,7 +539,15 @@ figure.effect-chico:hover p {
 }
 
 .tm-about-col-r {
-    margin-top: 90px;
+    position: relative;
+    top: -50px;
+}
+
+.self-portrait {
+    display: flex;
+    max-width: 70%;
+    border-radius: 50%;
+    margin: 0 auto 6% auto;
 }
 
 #about h3 {
@@ -562,7 +570,7 @@ figure.effect-chico:hover p {
     position: relative;
 }
 
- #timeline #BA {
+#timeline #BA {
     margin: 0;
 }
   
@@ -627,7 +635,7 @@ figure.effect-chico:hover p {
 }
 
 #currentSkills {
-    margin: 60px auto;
+    margin: 40px auto;
     width: 90%;
 }
   
